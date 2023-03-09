@@ -15,6 +15,11 @@ public class Quiz {
     final HashMap<Integer, Question> questions = new HashMap<>();
 
     public Quiz(String quizJsonFile) throws IOException, ParseException {
+        buildQuiz(quizJsonFile);
+        System.out.println(questions);
+    }
+
+    private void buildQuiz(String quizJsonFile) throws IOException, ParseException {
         QuizJsonReader JsonReader = new QuizJsonReader(quizJsonFile);
         JSONArray QuizQuestionsJSON = (JSONArray) JsonReader.getQuizJson().get("questions");
 
@@ -34,7 +39,6 @@ public class Quiz {
             });
             addQuestion(new Question(question, numAnswers,options));
         });
-        System.out.println(questions);
     }
 
     private void addQuestion(Question q) {

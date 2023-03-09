@@ -9,7 +9,6 @@ public class Options {
         options.put(answer,correct);
     }
 
-
     @Override
     public String toString() {
         return "Options{" +
