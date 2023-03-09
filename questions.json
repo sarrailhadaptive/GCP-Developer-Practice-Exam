@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "question": "Cloud Run can only pull images from:",
+      "numAnswers": 1,
+      "options":
+        [
+          {
+            "option":"Docker Hub",
+            "correct":false
+          },
+          {
+            "option":"Github",
+            "correct":false
+          },
+          {
+            "option":"Self-hosted registries",
+            "correct":false
+          },
+          {
+            "option":"Artifact Registry",
+            "correct":true
+          }
+        ]
+    }
+  ]
+
+}
